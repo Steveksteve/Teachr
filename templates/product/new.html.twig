@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Create New Product{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1 class="mb-4">Create New Product</h1>
+
+        {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <button type="submit" class="btn btn-primary">Save</button>
+        {{ form_end(form) }}
+
+        <a href="{{ path('app_product_index') }}" class="btn btn-secondary mt-3">Back to list</a>
+    </div>
+{% endblock %}

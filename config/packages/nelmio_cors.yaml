@@ -1,0 +1,8 @@
+nelmio_cors:
+    defaults:
+        allow_origin: ['http://localhost:3000', 'http://localhost:3001']
+        allow_methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE']
+        allow_headers: ['Content-Type', 'Authorization']
+        max_age: 3600
+    paths:
+        '^/api/': ~
